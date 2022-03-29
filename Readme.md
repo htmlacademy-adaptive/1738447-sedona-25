@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Захар Медовщиков](https://up.htmlacademy.ru/adaptive/25/user/1738447).
-* Наставник: `Неизвестно`.
+* Наставник: [Оксана Сергеева](https://htmlacademy.ru/profile/oksana).
 
 ---
 
