@@ -1,12 +1,185 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__logo">
+        <img src="img/logo-header.svg" alt="logo Sedona">
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__item-link">Главная</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__item-link">Фото и видео</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__item-link">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__item-link">Html Academy</a>
+          </li>
+        </ul>
+        <button class="header__toggle" type="button"></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__container">
+      <img src="img/logo-header.png" alt="Sedona logo" class="hero__logo">
+    </div>
+  </section>
+
+  <main>
+
+    <section class="introduction">
+      <div class="container introduction__container">
+        <h1 class="introduction__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
+        <p class="introduction__text">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="container advantage__container">
+        <div class="advantage__content">
+          <h3 class="name">НАСТОЯЩИЙ ГОРОДОК</h3>
+          <p class="number">— №1 —</p>
+          <p class="text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+        </div>
+
+        <img src="img/image.png" alt="picture-view1" class="advantage__picture">
+      </div>
+    </section>
+
+    <section class="bonus">
+      <div class="container bonus__container">
+        <ul class="bonus__list">
+          <li class="bonus__item">
+            <h3 class="bonus__name">Жилье</h3>
+            <p class="bonus__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="bonus__item">
+            <h3 class="bonus__name">Еда</h3>
+            <p class="bonus__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+          <li class="bonus__item">
+            <h3 class="bonus__name">Сувениры</h3>
+            <p class="bonus__text">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="advantage">
+      <div class="container advantage__container advantage__container-switch">
+        <div class="advantage__content">
+          <h3 class="name">Там есть мост дьявола</h3>
+          <p class="number">— №2 —</p>
+          <p class="text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img src="img/image-1.png" alt="picture-view2" class="advantage__picture">
+      </div>
+    </section>
+
+    <section class="advantage-list">
+      <div class="container advantage-list__container">
+        <div class="advantage-list__item">
+          <h3 class="name">Небольшая площадь</h3>
+          <p class="number">— №3 —</p>
+          <p class="text">ВСЕ интересные места находятся очень близко</p>
+        </div>
+        <div class="advantage-list__item">
+          <h3 class="name">Красивая дорога</h3>
+          <p class="number">— №4 —</p>
+          <p class="text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО! </p>
+        </div>
+        <div class="advantage-list__item">
+          <h3 class="name">Мало туристов</h3>
+          <p class="number">— №5 —</p>
+          <p class="text">Большинство едет в гранд каньони толпится там</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="book">
+      <div class="container book__container">
+        <h2 class="book__title">
+          ЗАИНТЕРЕСОВАЛИСЬ?
+        </h2>
+        <p class="book__text">
+          Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне
+        </p>
+        <a href="#" class="book__button">
+          Найти гостиницу
+        </a>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container map__container">
+        <div>
+          <!--Карта на JS Yandex-->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <a href="#" class="footer__link">#VISITSEDONA</a>
+      <ul class="footer__network">
+        <li class="footer__item">
+          <a href="#">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a href="#">
+            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__logo">
+        <a href="#">Разработано
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60">
+            <path fill="#2E368F"
+              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
 </html>
