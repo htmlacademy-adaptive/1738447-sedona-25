@@ -1,0 +1,25 @@
+.hero__container {
+  background-image: url("../img/background\ photo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 78px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  background-image: url("../img/intro-triangle.svg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 57px;
+}
+
