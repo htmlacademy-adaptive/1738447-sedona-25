@@ -11,13 +11,13 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__logo">
-        <img src="img/logo-header.svg" alt="Седона Лого">
+        <a href="index.html"><img src="img/logo-header.svg" alt="logo Sedona"></a>
       </div>
 
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a href="#" class="header__item-link">Главная</a>
+            <a href="index.html" class="header__item-link">Главная</a>
           </li>
           <li class="header__item">
             <a href="gallery.html" class="header__item-link">Фото и видео</a>
@@ -38,104 +38,73 @@
 
     <section class="hero">
       <div class="container hero__container">
-        <img src="img/logo-header.png" alt="Баннер Седона" class="hero__logo">
+        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo">
       </div>
     </section>
 
     <section class="introduction">
       <div class="container introduction__container">
-        <h1 class="introduction__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
+        <h1 class="introduction__title">Оставьте свой отзыв</h1>
         <p class="introduction__text">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </div>
     </section>
 
-    <section class="advantage">
-      <div class="container advantage__container">
-        <div class="advantage__content">
-          <h3 class="name">НАСТОЯЩИЙ ГОРОДОК</h3>
-          <p class="number">— №1 —</p>
-          <p class="text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-        </div>
+    <section class="form">
+      <div class="container form__container">
 
-        <img src="img/image.png" alt="Вид Седона" class="advantage__picture">
+        <form action="https://echo.htmlacademy.ru" method="post" name="form-fill">
+
+          <div class="form__introduce">
+            <h2 class="form__name">Представьтесь:</h2>
+            <label for="name">ИМЯ*:
+              <input type="text" id="name" class="form__input" name="name" required>
+            </label>
+            <label for="surname">Фамилия*:
+              <input type="text" id="surname" class="form__input" name="surname" required>
+            </label>
+            <label for="paternalname">Отчество*:
+              <input type="text" id="paternalname" class="form__input" name="paternalname">
+            </label>
+          </div>
+
+          <div class="form__contact">
+            <h2 class="form__name">Контактная информация:</h2>
+            <label for="phone">Контактный телефон*:
+              <input type="tel" id="phone" class="form__input" name="yourphone" required>
+            </label>
+            <label for="mail">Электронная почта*:
+              <input type="email" id="mail" class="form__input" name="yourmail" required>
+            </label>
+          </div>
+
+          <div class="form__impression">
+            <h2 class="form__name">Ваше впечатление:</h2>
+            <label for="positive"><input type="radio" id="positive" name="radio">Скорее положительное</label>
+            <label for="negative"><input type="radio" id="negative" name="radio">Скорее отрицательное</label>
+            <label for="notsure"><input type="radio" id="notsure" name="radio">Затрудняюсь ответить</label>
+          </div>
+
+          <div class="form__places">
+            <h2 class="form__name">Посещаемые достопримечательности:</h2>
+            <label for="bridge"><input type="checkbox" id="bridge">Мост Дьявола</label>
+            <label for="mount"><input type="checkbox" id="mount">Гора-Колокол</label>
+            <label for="park"><input type="checkbox" id="park">Слайд-парк</label>
+            <label for="rock"><input type="checkbox" id="rock">Красные скалы</label>
+          </div>
+
+          <div class="form__emotion">
+            <h2 class="form__name">Опишите свои эмоции:</h2>
+            <textarea name="emotions" cols="30" rows="10">опишите подробно все свои восторги</textarea>
+          </div>
+
+          <input type="submit" value="Отправить отзыв">
+        </form>
       </div>
     </section>
-
-    <section class="bonus">
-      <div class="container bonus__container">
-        <ul class="bonus__list">
-          <li class="bonus__item">
-            <h3 class="bonus__name">Жилье</h3>
-            <p class="bonus__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
-          <li class="bonus__item">
-            <h3 class="bonus__name">Еда</h3>
-            <p class="bonus__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-          </li>
-          <li class="bonus__item">
-            <h3 class="bonus__name">Сувениры</h3>
-            <p class="bonus__text">Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="advantage">
-      <div class="container advantage__container advantage__container-switch">
-        <div class="advantage__content">
-          <h3 class="name">Там есть мост дьявола</h3>
-          <p class="number">— №2 —</p>
-          <p class="text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        </div>
-        <img src="img/image-1.png" alt="picture-view2" class="advantage__picture">
-      </div>
-    </section>
-
-    <section class="advantage-list">
-      <div class="container advantage-list__container">
-        <div class="advantage-list__item">
-          <h3 class="name">Небольшая площадь</h3>
-          <p class="number">— №3 —</p>
-          <p class="text">ВСЕ интересные места находятся очень близко</p>
-        </div>
-        <div class="advantage-list__item">
-          <h3 class="name">Красивая дорога</h3>
-          <p class="number">— №4 —</p>
-          <p class="text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО! </p>
-        </div>
-        <div class="advantage-list__item">
-          <h3 class="name">Мало туристов</h3>
-          <p class="number">— №5 —</p>
-          <p class="text">Большинство едет в гранд каньони толпится там</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="book">
-      <div class="container book__container">
-        <h2 class="book__title">
-          ЗАИНТЕРЕСОВАЛИСЬ?
-        </h2>
-        <p class="book__text">
-          Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне
-        </p>
-        <a href="#" class="book__button">
-          Найти гостиницу
-        </a>
-      </div>
-    </section>
-
-    <section class="map">
-      <div class="container map__container">
-        <div>
-          <!--Карта на JS Yandex-->
-        </div>
-      </div>
-    </section>
-
   </main>
+
 
   <footer class="footer">
     <div class="container footer__container">
@@ -178,7 +147,6 @@
       </div>
     </div>
   </footer>
-
 
 </body>
 
