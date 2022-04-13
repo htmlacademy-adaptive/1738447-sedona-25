@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -27,7 +27,7 @@
             <a href="form.html" class="header__item-link">Отзывы</a>
           </li>
           <li class="header__item">
-            <a href="https://htmlacademy.ru/study" class="header__item-link">Html Academy</a>
+            <a href="https://htmlacademy.ru/study" class="header__item-link" target="_blank">Html Academy</a>
           </li>
         </ul>
         <button class="header__toggle" type="button"></button>
@@ -59,23 +59,23 @@
 
           <div class="form__introduce">
             <h2 class="form__name">Представьтесь:</h2>
-            <label for="name">ИМЯ*:
+            <label for="name" class="form__label">ИМЯ*:
               <input type="text" id="name" class="form__input" name="name" required>
             </label>
-            <label for="surname">Фамилия*:
+            <label for="surname"  class="form__label">Фамилия*:
               <input type="text" id="surname" class="form__input" name="surname" required>
             </label>
-            <label for="paternalname">Отчество*:
+            <label for="paternalname"  class="form__label">Отчество*:
               <input type="text" id="paternalname" class="form__input" name="paternalname">
             </label>
           </div>
 
           <div class="form__contact">
             <h2 class="form__name">Контактная информация:</h2>
-            <label for="phone">Контактный телефон*:
+            <label for="phone" class="form__label">Контактный телефон*:
               <input type="tel" id="phone" class="form__input" name="yourphone" required>
             </label>
-            <label for="mail">Электронная почта*:
+            <label for="mail" class="form__label">Электронная почта*:
               <input type="email" id="mail" class="form__input" name="yourmail" required>
             </label>
           </div>
@@ -97,10 +97,10 @@
 
           <div class="form__emotion">
             <h2 class="form__name">Опишите свои эмоции:</h2>
-            <textarea name="emotions" cols="30" rows="10">опишите подробно все свои восторги</textarea>
+            <textarea name="emotions" cols="30" rows="10" class="form__textarea">опишите подробно все свои восторги</textarea>
           </div>
 
-          <input type="submit" value="Отправить отзыв">
+          <input type="submit" value="Отправить отзыв" class="form__button">
         </form>
       </div>
     </section>
