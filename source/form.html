@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="container header__container">
       <div class="header__logo">
@@ -15,7 +17,7 @@
       </div>
 
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="list header__list">
           <li class="header__item">
             <a href="index.html" class="header__item-link">Главная</a>
           </li>
@@ -26,7 +28,7 @@
             <a href="form.html" class="header__item-link">Отзывы</a>
           </li>
           <li class="header__item">
-            <a href="https://htmlacademy.ru/study" class="header__item-link">Html Academy</a>
+            <a href="https://htmlacademy.ru/study" class="header__item-link" target="_blank">Html Academy</a>
           </li>
         </ul>
         <button class="header__toggle" type="button"></button>
@@ -58,23 +60,23 @@
 
           <div class="form__introduce">
             <h2 class="form__name">Представьтесь:</h2>
-            <label for="name">ИМЯ*:
+            <label for="name" class="form__label">ИМЯ*:
               <input type="text" id="name" class="form__input" name="name" required>
             </label>
-            <label for="surname">Фамилия*:
+            <label for="surname"  class="form__label">Фамилия*:
               <input type="text" id="surname" class="form__input" name="surname" required>
             </label>
-            <label for="paternalname">Отчество*:
+            <label for="paternalname"  class="form__label">Отчество*:
               <input type="text" id="paternalname" class="form__input" name="paternalname">
             </label>
           </div>
 
           <div class="form__contact">
             <h2 class="form__name">Контактная информация:</h2>
-            <label for="phone">Контактный телефон*:
+            <label for="phone" class="form__label">Контактный телефон*:
               <input type="tel" id="phone" class="form__input" name="yourphone" required>
             </label>
-            <label for="mail">Электронная почта*:
+            <label for="mail" class="form__label">Электронная почта*:
               <input type="email" id="mail" class="form__input" name="yourmail" required>
             </label>
           </div>
@@ -96,20 +98,19 @@
 
           <div class="form__emotion">
             <h2 class="form__name">Опишите свои эмоции:</h2>
-            <textarea name="emotions" cols="30" rows="10">опишите подробно все свои восторги</textarea>
+            <textarea name="emotions" cols="30" rows="10" class="form__textarea">опишите подробно все свои восторги</textarea>
           </div>
 
-          <input type="submit" value="Отправить отзыв">
+          <input type="submit" value="Отправить отзыв" class="form__button">
         </form>
       </div>
     </section>
   </main>
 
-
   <footer class="footer">
     <div class="container footer__container">
       <a href="#" class="footer__link">#VISITSEDONA</a>
-      <ul class="footer__network">
+      <ul class="list footer__network">
         <li class="footer__item">
           <a href="#">
             <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
