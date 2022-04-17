@@ -40,7 +40,7 @@
 
     <section class="hero">
       <div class="container hero__container">
-        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo">
+        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo-modified">
       </div>
     </section>
 
@@ -115,11 +115,15 @@
           </div>
 
           <div class="form__emotion">
-            <h2 class="form__name">Опишите свои эмоции:</h2>
-            <textarea name="emotions" cols="30" rows="10" class="form__textarea">опишите подробно все свои восторги</textarea>
+            <h2 class="name form__name">Опишите свои эмоции:</h2>
+            <textarea name="emotions" cols="40" rows="10" class="form__textarea" placeholder="опишите все свои восторги"></textarea>
           </div>
 
-          <input type="submit" value="Отправить отзыв" class="form__button">
+          <div class="form__submit">
+            <input type="submit" value="Отправить отзыв" id="form-submit" class="form__button">
+            <label class="form__label form__label-submit">* — обязательные поля</label>
+          </div>
+
         </form>
       </div>
     </section>
