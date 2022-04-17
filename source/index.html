@@ -57,12 +57,13 @@
     <section class="advantage">
       <div class="container advantage__container">
         <div class="advantage__content">
-          <h3 class="name">НАСТОЯЩИЙ ГОРОДОК</h3>
+          <h3 class="name">НАСТОЯЩИЙ <br> ГОРОДОК</h3>
           <p class="number">— №1 —</p>
           <p class="text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-
-        <img src="img/image.png" alt="Вид Седона" class="advantage__picture">
+         <picture class="advantage__picture">
+           <img src="img/image.png" alt="Вид Седона" class="advantage__img">
+         </picture>
       </div>
     </section>
 
@@ -70,16 +71,31 @@
       <div class="container bonus__container">
         <ul class="list bonus__list">
           <li class="bonus__item">
-            <h3 class="bonus__name">Жилье</h3>
-            <p class="bonus__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <picture class="bonus__picture">
+              <img src="img/icon-house.svg" alt="">
+            </picture>
+             <div class="bonus__content">
+               <h3 class="name bonus__name">Жилье</h3>
+               <p class="text bonus__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+             </div>
           </li>
           <li class="bonus__item">
-            <h3 class="bonus__name">Еда</h3>
-            <p class="bonus__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            <picture class="bonus__picture">
+              <img src="img/icon-burger.svg" alt="">
+            </picture>
+            <div class="bonus__content">
+              <h3 class="name bonus__name">Еда</h3>
+              <p class="text bonus__text">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            </div>
           </li>
           <li class="bonus__item">
-            <h3 class="bonus__name">Сувениры</h3>
-            <p class="bonus__text">Не только китайского, но и местного производства!</p>
+            <picture class="bonus__picture">
+              <img src="img/icon-gift.svg" alt="">
+            </picture>
+            <div class="bonus__content">
+              <h3 class="name bonus__name">Сувениры</h3>
+              <p class="text bonus__text">Не только китайского, но и местного производства!</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -88,31 +104,35 @@
     <section class="advantage">
       <div class="container advantage__container advantage__container-switch">
         <div class="advantage__content">
-          <h3 class="name">Там есть мост дьявола</h3>
+          <h3 class="name">Там есть <br> мост дьявола</h3>
           <p class="number">— №2 —</p>
           <p class="text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img src="img/image-1.png" alt="picture-view2" class="advantage__picture">
+        <picture class="advantage__picture">
+          <img src="img/image-1.png" alt="picture-view2" class="advantage__img">
+        </picture>
       </div>
     </section>
 
     <section class="advantage-list">
       <div class="container advantage-list__container">
-        <div class="advantage-list__item">
-          <h3 class="name">Небольшая площадь</h3>
+        <ul class="list advantage-list__numbers">
+           <li class="advantage-list__item">
+          <h3 class="name advantage-list__name">Небольшая <br> площадь</h3>
           <p class="number">— №3 —</p>
-          <p class="text">ВСЕ интересные места находятся очень близко</p>
-        </div>
-        <div class="advantage-list__item">
-          <h3 class="name">Красивая дорога</h3>
+          <p class="text advantage-list__text">ВСЕ интересные места находятся очень близко</p>
+        </li>
+        <li class="advantage-list__item">
+          <h3 class="name advantage-list__name">Красивая <br> дорога</h3>
           <p class="number">— №4 —</p>
-          <p class="text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО! </p>
-        </div>
-        <div class="advantage-list__item">
-          <h3 class="name">Мало туристов</h3>
+          <p class="text advantage-list__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО! </p>
+        </li>
+        <li class="advantage-list__item">
+          <h3 class="name advantage-list__name">Мало <br> туристов</h3>
           <p class="number">— №5 —</p>
-          <p class="text">Большинство едет в гранд каньони толпится там</p>
-        </div>
+          <p class="text advantage-list__text">Большинство едет в гранд каньони толпится там</p>
+        </li>
+        </ul>
       </div>
     </section>
 
@@ -122,7 +142,7 @@
           ЗАИНТЕРЕСОВАЛИСЬ?
         </h2>
         <p class="book__text">
-          Укажите предполагаемые датыпоездки, и мы покажем вам лучшиепредложения гостиниц в седоне
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне
         </p>
         <a href="#" class="book__button">
           Найти гостиницу
