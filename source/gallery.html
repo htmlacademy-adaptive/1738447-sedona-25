@@ -40,7 +40,7 @@
 
     <section class="hero">
       <div class="container hero__container">
-        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo">
+        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo-modified">
       </div>
     </section>
 
@@ -55,8 +55,11 @@
 
     <section class="gallery">
       <div class="container gallery__container">
-        <div class="gallery__item">
-          <img src="img/photo-1-desktop.jpg" alt="Неродные просторы" class="gallery__picture">
+        <ul class="list gallery__list">
+         <li class="gallery__item">
+           <picture class="gallery__picture">
+             <img src="img/photo-1-desktop.jpg" alt="Неродные просторы" class="gallery__img gallery__img-bigger">
+           </picture>
           <div class="gallery__info">
             <p class="gallery__text">
               <span class="gallery__picture-name">Неродные просторы</span>
@@ -67,9 +70,11 @@
               <span>1350</span>
             </p>
           </div>
-        </div>
-        <div class="gallery__item">
-          <img src="img/photo-2-desktop.jpg" alt="Местная растительность" class="gallery__picture">
+        </li>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img src="img/photo-2-desktop.jpg" alt="Местная растительность" class="gallery__img">
+          </picture>
           <div class="gallery__info">
             <p class="gallery__text">
               <span class="gallery__picture-name">Местная растительность</span>
@@ -80,9 +85,11 @@
               <span>1350</span>
             </p>
           </div>
-        </div>
-        <div class="gallery__item">
-          <img src="img/photo-3-desktop.jpg" alt="Дорога на север" class="gallery__picture">
+        </li>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img src="img/photo-3-desktop.jpg" alt="Дорога на север" class="gallery__img">
+          </picture>
           <div class="gallery__info">
             <p class="gallery__text">
               <span class="gallery__picture-name">Дорога на север</span>
@@ -93,9 +100,11 @@
               <span>1350</span>
             </p>
           </div>
-        </div>
-        <div class="gallery__item">
-          <img src="img/photo-4-desktop.jpg" alt="Мост Дьявола" class="gallery__picture">
+        </li>
+        <li class="gallery__item">
+          <picture class="gallery__picture">
+            <img src="img/photo-4-desktop.jpg" alt="Мост Дьявола" class="gallery__img">
+          </picture>
           <div class="gallery__info">
             <p class="gallery__text">
               <span class="gallery__picture-name">Мост Дьявола</span>
@@ -107,7 +116,8 @@
             </p>
           </div>
         </div>
-      </div>
+      </li>
+        </ul>
     </section>
 
     <section class="video">
@@ -115,8 +125,8 @@
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <div>
-          <img src="img/video-desktop.jpg.jpg" alt="" class="video__picture">
+        <div class="video__picture">
+          <img src="img/video-desktop.jpg.jpg" alt="" class="video__img">
         </div>
       </div>
     </section>
