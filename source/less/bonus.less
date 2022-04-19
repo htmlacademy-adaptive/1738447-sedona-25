@@ -22,3 +22,39 @@
 .bonus__text {
   padding-top: 25px;
 }
+
+@media (min-width: 768px) {
+  .bonus__list {
+    padding: 0 30px;
+    gap: 70px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .bonus__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .bonus__list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .bonus__item {
+    flex-basis: unset;
+    display: flex;
+    padding: 0 18px;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row;
+  }
+
+  .bonus__text {
+    padding-top: 15px;
+  }
+
+  .bonus__content {
+    text-align: left;
+  }
+}
