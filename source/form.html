@@ -12,11 +12,25 @@
 <body class="body">
   <header class="header">
     <div class="container header__container">
-      <div class="header__logo">
-        <a href="index.html"><img src="img/logo-header.svg" alt="logo Sedona"></a>
-      </div>
+
+      <button class="header__btn-open">
+        <svg width="20" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="20" height="4" fill="#81b3d2"/>
+          <rect y="8" width="20" height="4" fill="#81b3d2"/>
+          <rect y="16" width="10" height="4" fill="#81b3d2"/>
+        </svg>
+      </button>
+
+      <a href="index.html" class="header__logo"><img src="img/logo2.png" alt="Седона Лого"></a>
 
       <nav class="header__nav">
+        <button class="header__toggle" type="button">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.09094" width="29.5699" height="4" transform="rotate(45 2.09094 0)" fill="#ffffff"/>
+            <rect y="20.9092" width="29.5699" height="4" transform="rotate(-45 0 20.9092)" fill="#ffffff"/>
+          </svg>
+        </button>
+
         <ul class="list header__list">
           <li class="header__item">
             <a href="index.html" class="header__item-link">Главная</a>
@@ -31,7 +45,7 @@
             <a href="https://htmlacademy.ru/study" class="header__item-link" target="_blank">Html Academy</a>
           </li>
         </ul>
-        <button class="header__toggle" type="button"></button>
+
       </nav>
     </div>
   </header>
@@ -171,6 +185,7 @@
     </div>
   </footer>
 
+<script src="js/burger.js"></script>
 </body>
 
 </html>

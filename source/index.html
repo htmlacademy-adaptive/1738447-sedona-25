@@ -15,12 +15,27 @@
   <header class="header">
     <div class="container header__container">
 
+      <button class="header__btn-open">
+        <svg width="20" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="20" height="4" fill="#81b3d2"/>
+          <rect y="8" width="20" height="4" fill="#81b3d2"/>
+          <rect y="16" width="10" height="4" fill="#81b3d2"/>
+        </svg>
+      </button>
+
       <img src="img/logo2.png" alt="Седона Лого" class="header__logo">
 
       <nav class="header__nav">
+        <button class="header__toggle" type="button">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2.09094" width="29.5699" height="4" transform="rotate(45 2.09094 0)" fill="#ffffff"/>
+            <rect y="20.9092" width="29.5699" height="4" transform="rotate(-45 0 20.9092)" fill="#ffffff"/>
+          </svg>
+        </button>
+
         <ul class="list header__list">
           <li class="header__item">
-            <a href="#" class="header__item-link">Главная</a>
+            <a href="index.html" class="header__item-link">Главная</a>
           </li>
           <li class="header__item">
             <a href="gallery.html" class="header__item-link">Фото и видео</a>
@@ -32,7 +47,7 @@
             <a href="https://htmlacademy.ru/study" class="header__item-link" target="_blank">Html Academy</a>
           </li>
         </ul>
-        <button class="header__toggle" type="button"></button>
+
       </nav>
     </div>
   </header>
@@ -56,7 +71,7 @@
 
     <section class="advantage">
       <div class="container advantage__container">
-        <div class="advantage__content">
+        <div class="advantage__content advantage__content-modified">
           <h3 class="name">НАСТОЯЩИЙ <br> ГОРОДОК</h3>
           <p class="number">— №1 —</p>
           <p class="text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
@@ -199,6 +214,7 @@
   </footer>
 
   <script src="js/map.js"></script>
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
