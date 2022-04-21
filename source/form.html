@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"  class="html">
 
 <head>
   <meta charset="utf-8">
@@ -11,7 +11,7 @@
 
 <body class="body">
   <header class="header">
-    <div class="container header__container">
+    <div class="container header__container header__container-modified">
 
       <button class="header__btn-open">
         <svg width="20" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,9 +21,9 @@
         </svg>
       </button>
 
-      <a href="index.html" class="header__logo"><img src="img/logo2.png" alt="Седона Лого"></a>
+      <a href="index.html" class="header__logo header__logo-modified"><img src="img/logo2.png" alt="Седона Лого"></a>
 
-      <nav class="header__nav">
+      <nav class="header__nav header__nav-modified">
         <button class="header__toggle" type="button">
           <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.09094" width="29.5699" height="4" transform="rotate(45 2.09094 0)" fill="#ffffff"/>
@@ -53,7 +53,7 @@
   <main>
 
     <section class="hero">
-      <div class="container hero__container">
+      <div class="container hero__container hero__container-modified">
         <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo-modified">
       </div>
     </section>
@@ -99,13 +99,25 @@
             <h2 class="name form__name">Ваше впечатление:</h2>
             <ul class="list form__list">
               <li class="form__item">
-                <label for="positive"><input type="radio" id="positive" name="radio">Скорее положительное</label>
+                <label for="positive" class="radio">
+                  <input type="radio" id="positive" name="radio" class="radio__input">
+                  <span class="radio__button"></span>
+                  Скорее положительное
+                </label>
               </li>
               <li class="form__item">
-                <label for="negative"><input type="radio" id="negative" name="radio">Скорее отрицательное</label>
+                <label for="negative" class="radio">
+                  <input type="radio" id="negative" name="radio" class="radio__input">
+                  <span class="radio__button"></span>
+                  Скорее отрицательное
+                </label>
               </li>
               <li class="form__item">
-                <label for="notsure"><input type="radio" id="notsure" name="radio">Затрудняюсь ответить</label>
+                <label for="notsure" class="radio">
+                  <input type="radio" id="notsure" name="radio" class="radio__input">
+                  <span class="radio__button"></span>
+                  Затрудняюсь ответить
+                </label>
               </li>
             </ul>
           </div>
@@ -114,16 +126,32 @@
             <h2 class="name form__name">Посещаемые достопримечательности:</h2>
             <ul class="list form__list">
               <li class="form__item">
-                <label for="bridge"><input type="checkbox" id="bridge">Мост Дьявола</label>
+                <label for="bridge" class="check">
+                  <input type="checkbox" id="bridge" class="check__input">
+                   <span class="check__box"></span>
+                  Мост Дьявола
+                </label>
               </li>
               <li class="form__item">
-                <label for="mount"><input type="checkbox" id="mount">Гора-Колокол</label>
+                <label for="mount" class="check">
+                  <input type="checkbox" id="mount" class="check__input">
+                  <span class="check__box"></span>
+                  Гора-Колокол
+                </label>
               </li>
               <li class="form__item">
-                <label for="park"><input type="checkbox" id="park">Слайд-парк</label>
+                <label for="park" class="check">
+                  <input type="checkbox" id="park" class="check__input">
+                  <span class="check__box"></span>
+                  Слайд-парк
+                </label>
               </li>
               <li class="form__item">
-                <label for="rock"><input type="checkbox" id="rock">Красные скалы</label>
+                <label for="rock" class="check">
+                  <input type="checkbox" id="rock" class="check__input">
+                  <span class="check__box"></span>
+                  Красные скалы
+                </label>
               </li>
             </ul>
           </div>
