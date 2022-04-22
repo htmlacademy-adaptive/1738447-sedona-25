@@ -5,10 +5,6 @@
   padding: 0 90px;
 }
 
-.form__name {
-  padding-top: 40px;
-}
-
 .form__label {
   display: flex;
   flex-direction: column;
@@ -36,6 +32,7 @@
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  border-right: 1px solid #d8d8d8;
 }
 
 .form__contact {
@@ -48,7 +45,8 @@
 }
 
 .form__list {
-  padding-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -56,6 +54,7 @@
 }
 
 .form__impression {
+  padding-top: 48px;
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
@@ -81,7 +80,9 @@
   margin-top: 30px;
   padding-left: 16px;
   padding-top: 16px;
+  max-width: 768px;
   width: 100%;
+  height: 160px;
   border: none;
   background: #f2f2f2;
 }
@@ -93,6 +94,8 @@
 
 .form__submit {
   padding-top: 40px;
+  padding-left: 115px;
+  padding-right: 115px;
   flex-basis: 100%;
   display: flex;
   align-items: center;
@@ -114,13 +117,18 @@
   width: 100%;
   max-width: 320px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 21px;
   line-height: 26px;
 }
 
 @media (min-width: 768px) and (max-width: 1045px) {
   .form__content {
     padding: 0 60px;
+  }
+
+  .form__submit {
+    padding-left: unset;
+    padding-right: unset;
   }
 
   .form__introduce {
@@ -134,7 +142,7 @@
 
 @media (min-width: 310px) and (max-width: 767px) {
   .form__content {
-    padding: 0 20px;
+    padding: unset;
   }
 
   .form__list {
@@ -142,17 +150,44 @@
   }
 
   .form__introduce {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
     flex-basis: 100%;
-    padding-right: unset;
+    border-right: unset;
+    padding: 24px 20px 34px 20px;
   }
 
   .form__contact {
     flex-basis: 100%;
-    padding-left: unset;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: unset;
+    padding: 24px 20px 34px 20px;
+  }
+
+  .form__impression {
+    flex-basis: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: unset;
+    padding: 24px 20px 34px 20px;
+  }
+
+  .form__places {
+    flex-basis: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: unset;
+    padding: 24px 20px 34px 20px;
+  }
+
+  .form__emotion {
+    flex-basis: 100%;
+    border-right: unset;
+    padding: 24px 20px 34px 20px;
   }
 
   .form__submit {
     flex-direction: column;
     align-items: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

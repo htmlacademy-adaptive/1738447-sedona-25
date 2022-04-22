@@ -1,5 +1,6 @@
 .video__container {
-  padding: 40px 0;
+  padding-top: unset;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,8 +20,11 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  max-width: 445px;
+  width: 445px;
   text-transform: uppercase;
+  margin: unset;
+  padding-bottom: 64px;
+  padding-top: 40px;
 }
 
 .video__picture {
@@ -40,7 +44,12 @@
   }
 }
 
-@media (min-width: 310px) {
+@media (min-width: 310px) and (max-width: 767px) {
+  .video__container {
+    padding-top: 17px;
+    padding-bottom: unset;
+  }
+
   .video__picture {
     padding: 0 20px;
   }
@@ -51,5 +60,7 @@
 
   .video__text {
     max-width: 90%;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 }
