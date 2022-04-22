@@ -1,0 +1,31 @@
+.mail {
+  display: flex;
+  gap: unset;
+  align-items: center;
+}
+
+.mail__input {
+  flex-basis: 344px;
+  height: 58px;
+  flex-shrink: 1;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.mail__button {
+  flex-basis: 58px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 59px;
+  background-color: #e6e6e6;
+  border: none;
+  background-image: url("../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) and (max-width: 1045px) {
+  .mail__input {
+    flex-basis: 222px;
+  }
+}

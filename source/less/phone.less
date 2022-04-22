@@ -1,0 +1,32 @@
+.phone {
+  display: flex;
+  gap: unset;
+  align-items: center;
+}
+
+.phone__input {
+  flex-basis: 344px;
+  height: 58px;
+  flex-shrink: 1;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.phone__button {
+  flex-basis: 58px;
+  flex-shrink: 0;
+  width: 58px;
+  height: 59px;
+  background-color: #e6e6e6;
+  border: none;
+  background-image: url("../img/phone2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) and (max-width: 1045px) {
+  .phone__input {
+    flex-basis: 222px;
+  }
+}
+
