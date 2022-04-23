@@ -6,7 +6,7 @@
   flex-wrap: wrap;
 }
 
-.gallery__item {
+.gallery__item-modified {
   position: relative;
 }
 
@@ -35,13 +35,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  color: #ffffff;
+  background: rgba(18, 18, 18, 0.3);
+}
+
+.gallery__info-modified {
   position: absolute;
   z-index: 3;
   bottom: 0;
   left: 0;
   right: 0;
-  color: #ffffff;
-  background: rgba(18, 18, 18, 0.3);
 }
 
 .gallery__text {
@@ -78,9 +81,12 @@
   }
 
   .gallery__info {
-    position: unset;
     background: #eaeaea;
     color: #000000;
+  }
+
+  .gallery__info-modified {
+    position: unset;
   }
 
   .gallery__item:nth-child(2) {
