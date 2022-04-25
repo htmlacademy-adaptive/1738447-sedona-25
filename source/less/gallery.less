@@ -1,118 +1,12 @@
-.gallery__list {
-  margin-top: unset;
-  padding-top: unset;
-  padding-bottom: 62px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery__item-modified {
-  position: relative;
-}
-
-.gallery__item:nth-child(1) {
-  flex-basis: 100%;
-  flex-shrink: 1;
-}
-
-.gallery__picture {
-  width: 100%;
-  height: 267px;
-}
-
-.gallery__picture-bigger {
-  height: 400px;
-}
-
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  color: #ffffff;
-  background: rgba(18, 18, 18, 0.3);
-}
-
-.gallery__info-modified {
-  position: absolute;
-  z-index: 3;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.gallery__text {
-  display: flex;
-  flex-direction: column;
-}
-
-.gallery__picture-name {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.gallery__picture-author {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-}
-
-.gallery__container {
-  display: flex;
-  align-items: center;
-}
-
-.gallery__button {
-  border: none;
-  background: transparent;
-}
-
-@media (min-width: 768px) and (max-width: 1045px) {
-  .gallery__list {
-    padding: 5px 60px 58px 60px;
-  }
-
-  .gallery__info {
-    background: #eaeaea;
-    color: #000000;
-  }
-
-  .gallery__info-modified {
-    position: unset;
-  }
-
-  .gallery__item:nth-child(2) {
-    flex-basis: 50%;
-    flex-shrink: 1;
-  }
-
-  .gallery__item:nth-child(3) {
-    flex-basis: 50%;
-    flex-shrink: 1;
-  }
-
-  .gallery__item:nth-child(4) {
-    flex-basis: 50%;
-    flex-shrink: 1;
-  }
-
-  .gallery__button svg path {
-    fill: #000000;
-    opacity: 0.3;
-  }
-}
-
-@media (min-width: 310px) and (max-width: 767px) {
+@media (min-width: 310px) {
   .gallery__list {
     padding: unset;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item-modified {
+    position: relative;
   }
 
   .gallery__item {
@@ -142,11 +36,19 @@
   }
 
   .gallery__picture {
+    width: 100%;
     height: 280px;
+  }
+
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .gallery__info {
     color: #000000;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: transparent;
@@ -154,12 +56,122 @@
     position: unset;
   }
 
+  .gallery__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__picture-name {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .gallery__picture-author {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .gallery__button {
+    border: none;
+    background: transparent;
+  }
+
   .gallery__counter {
     margin: unset;
+    display: flex;
+    align-items: center;
   }
 
   .gallery__counter svg path {
     fill: #000000;
+    opacity: 0.4;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .gallery__list {
+    padding: 5px 60px 58px 60px;
+  }
+
+  .gallery__info {
+    background: #eaeaea;
+    color: #000000;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .gallery__info-modified {
+    position: unset;
+  }
+
+  .gallery__item {
+    border-bottom: unset;
+    padding: unset;
+  }
+
+  .gallery__item:nth-child(2) {
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+
+  .gallery__item:nth-child(3) {
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+
+  .gallery__item:nth-child(4) {
+    flex-basis: 50%;
+    flex-shrink: 1;
+  }
+
+  .gallery__picture {
+    height: 268px;
+  }
+
+  .gallery__picture-bigger {
+    height: 400px;
+  }
+
+  .gallery__button svg path {
+    fill: #000000;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 1045px) {
+  .gallery__list {
+    padding: unset;
+  }
+
+  .gallery__item:not(:first-child) {
+    flex-basis: 400px;
+  }
+
+  .gallery__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #ffffff;
+    background: rgba(18, 18, 18, 0.3);
+  }
+
+  .gallery__info-modified {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .gallery__counter svg path {
+    fill: #ffffff;
     opacity: 0.4;
   }
 }

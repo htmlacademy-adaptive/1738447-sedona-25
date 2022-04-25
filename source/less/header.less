@@ -1,56 +1,32 @@
-.header__container {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 15px 0;
-}
 
-.header__container-modified {
-  position: relative;
-}
+@media (min-width: 310px) {
+  .header__container {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+  }
 
-.header__logo-modified {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-}
+  .header__container-modified {
+    position: relative;
+  }
 
-.header__nav {
-  width: 1200px;
-  max-width: 100%;
-}
+  .header__logo-modified {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+  }
 
-.header__list {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1200px;
-  list-style: none;
-}
+  .header__item-link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+  }
 
-.header__item:nth-child(2) {
-  padding-right: 120px;
-}
-
-.header__item-link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #000000;
-}
-
-.header__toggle {
-  display: none;
-}
-
-.header__btn-open {
-  display: none;
-}
-
-@media (min-width: 310px) and (max-width: 767px) {
   .header__btn-open {
     display: block;
     margin-left: auto;
@@ -87,6 +63,7 @@
   }
 
   .header__list {
+    display: flex;
     flex-direction: column;
     text-align: center;
   }
@@ -97,10 +74,6 @@
     box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2), inset 1px 1px 1px rgba(255, 255, 255, 0.2);
   }
 
-  .header__item-link {
-    color: #ffffff;
-  }
-
   .header__item:nth-child(2) {
     padding-right: unset;
   }
@@ -109,5 +82,53 @@
     max-width: 300px;
     height: 214px;
     z-index: 10;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    padding: unset;
+  }
+
+  .header__btn-open {
+    display: none;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__nav-modified {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    background: #ffffff;
+    transform: none;
+  }
+
+  .header__nav.active {
+    transform: none;
+  }
+
+  .header__list {
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-around;
+    max-width: 1200px;
+    list-style: none;
+  }
+
+  .header__item {
+    flex-basis: 20%;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .header__item:nth-child(2) {
+    padding-right: 120px;
+  }
+
+  .header__item-link {
+    color: #000000;
   }
 }
