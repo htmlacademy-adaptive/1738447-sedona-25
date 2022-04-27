@@ -11,7 +11,7 @@
 
 <body class="body">
   <header class="header">
-    <div class="container header__container header__container-modified">
+    <div class="container header__container header__container--modified">
 
       <button class="header__btn-open">
         <svg width="20" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,9 +21,9 @@
         </svg>
       </button>
 
-      <a href="index.html" class="header__logo header__logo-modified"><img src="img/logo2.png" alt="Седона Лого"></a>
+      <a href="index.html" class="header__logo header__logo--modified"><img src="img/logo2.png" alt="Седона Лого"></a>
 
-      <nav class="header__nav header__nav-modified">
+      <nav class="header__nav header__nav--modified">
         <button class="header__toggle" type="button">
           <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="2.09094" width="29.5699" height="4" transform="rotate(45 2.09094 0)" fill="#ffffff" />
@@ -53,8 +53,8 @@
   <main>
 
     <section class="hero">
-      <div class="container hero__container hero__container-modified">
-        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo-modified">
+      <div class="container hero__container hero__container--modified">
+        <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo--modified">
       </div>
     </section>
 
@@ -75,15 +75,15 @@
           <div class="form__introduce">
             <h2 class="name">Представьтесь:</h2>
             <label for="name" class="form__label">
-              <span class="form__label-modified">ИМЯ*:</span>
+              <span class="form__label--modified">ИМЯ*:</span>
               <input type="text" id="name" class="form__input" name="name" required>
             </label>
             <label for="surname" class="form__label">
-              <span class="form__label-modified">Фамилия*:</span>
+              <span class="form__label--modified">Фамилия*:</span>
               <input type="text" id="surname" class="form__input" name="surname" required>
             </label>
             <label for="paternalname" class="form__label">
-              <span class="form__label-modified">Отчество*:</span>
+              <span class="form__label--modified">Отчество*:</span>
               <input type="text" id="paternalname" class="form__input" name="paternalname">
             </label>
           </div>
@@ -91,16 +91,16 @@
           <div class="form__contact">
             <h2 class="name">Контактная информация:</h2>
             <label for="phone" class="form__label">
-                <span class="form__label-modified">Контактный телефон*:</span>
-                <input type="tel" id="phone" class="form__input form__input-phone" name="yourphone" required>
+                <span class="form__label--modified">Контактный телефон*:</span>
+                <input type="tel" id="phone" class="form__input form__input--phone" name="yourphone" required>
             </label>
             <label for="mail" class="form__label">
-              <span class="form__label-modified">Электронная почта*:</span>
-                <input type="email" id="mail" class="form__input form__input-mail" name="yourmail" required>
+              <span class="form__label--modified">Электронная почта*:</span>
+                <input type="email" id="mail" class="form__input form__input--mail" name="yourmail" required>
             </label>
           </div>
 
-          <div class="form__impression form__impression-modified">
+          <div class="form__impression form__impression--modified">
             <h2 class="name form__name">Ваше общее впечатление:</h2>
             <ul class="list form__list">
               <li class="form__item">
@@ -164,14 +164,12 @@
           <div class="form__emotion">
             <h2 class="name form__name">Опишите свои эмоции:</h2>
             <textarea name="emotions" class="form__textarea" placeholder="опишите все свои восторги"></textarea>
-
           </div>
+
           <div class="form__submit">
             <input type="submit" value="Отправить отзыв" id="form-submit" class="form__button">
             <label class="form__label form__label-submit">* — обязательные поля</label>
           </div>
-
-
 
         </form>
       </div>
