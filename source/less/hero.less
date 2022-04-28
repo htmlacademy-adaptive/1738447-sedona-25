@@ -1,42 +1,51 @@
-.hero__container {
-  background-image: url("../img/background\ photo1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 78px;
-  padding-bottom: 90px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
 
-.hero__container::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 57px;
-  background-image: url("../img/intro-triangle.svg.svg");
-  background-position: center;
-}
-
-@media (min-width: 768px) {
-  .hero__logo-modified {
-    height: 77px;
+@media (min-width: 310px) {
+  .hero__container {
+    background-image: url("../img/background\ photo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 78px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    position: relative;
   }
-}
 
+  .hero__container--modified {
+    position: relative;
+  }
 
-@media (min-width: 310px) and (max-width: 767px) {
+  .hero__container--modified::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 57px;
+    background-image: url("../img/intro-triangle.svg.svg");
+    background-position: center;
+  }
+
   .hero__logo {
     max-width: 300px;
     height: 214px;
     z-index: 10;
   }
 
-  .hero__logo-modified {
+  .hero__logo--modified {
     max-width: 230px;
     height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__logo {
+    max-width: 450px;
+    height: 350px;
+  }
+
+  .hero__logo--modified {
+    height: 77px;
   }
 }

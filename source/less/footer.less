@@ -1,9 +1,9 @@
 .footer__container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
   align-items: center;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding: 27px 0;
 }
 
 .footer__link {
@@ -36,10 +36,11 @@
   color: #000000;
 }
 
-@media (min-width: 310px) and (max-width: 767px) {
+
+@media (min-width: 767px) {
   .footer__container {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+    flex-direction: row;
+    gap: unset;
+    justify-content: space-around;
   }
 }
