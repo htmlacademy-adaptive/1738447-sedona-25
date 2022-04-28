@@ -26,6 +26,19 @@
   justify-content: center;
   align-items: center;
   background-color: #81b3d2;
+  transition: 250ms;
+}
+
+.footer__item:hover {
+  background-color: #669ec0;
+}
+
+.footer__item:active {
+  background-color: #5496bd;
+}
+
+.footer__item:active svg path {
+  opacity: 0.3;
 }
 
 .footer__logo {
@@ -34,6 +47,25 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+  transition: 250ms;
+}
+
+.footer__logo:hover {
+  color: #81b3d2;
+}
+
+.footer__logo:hover svg path {
+  fill: #81b3d2;
+  transition: 250ms;
+}
+
+.footer__logo:active {
+  color: #b3b3b3;
+}
+
+.footer__logo:active svg path {
+  fill: #b3b3b3;
+  transition: 250ms;
 }
 
 

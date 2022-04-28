@@ -23,6 +23,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  transition: 250ms;
 }
 
 .header__btn-open {
@@ -31,6 +32,15 @@
   padding-right: 20px;
   background: transparent;
   border: none;
+  transition: 250ms;
+}
+
+.header__btn-open:hover svg rect {
+  opacity: 0.6;
+}
+
+.header__btn-open:active svg rect {
+  opacity: 0.3;
 }
 
 .header__toggle {
@@ -40,6 +50,15 @@
   background: transparent;
   border: none;
   top: 15px;
+  transition: 250ms;
+}
+
+.header__toggle:hover svg rect {
+  opacity: 0.6;
+}
+
+.header__toggle:active svg rect {
+  opacity: 0.3;
 }
 
 .header__nav--modified {
@@ -70,6 +89,16 @@
   flex-basis: 100%;
   padding: 15px 0;
   box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2), inset 1px 1px 1px rgba(255, 255, 255, 0.2);
+  transition: 250ms;
+}
+
+.header__item:hover {
+  background-color: #669ec0;
+}
+
+.header__item:active {
+  background-color: #5496bd;
+  opacity: 0.3;
 }
 
 .header__item:nth-child(2) {
@@ -121,11 +150,30 @@
     background: transparent;
   }
 
+  .header__item:hover {
+    background-color: transparent;
+  }
+
+  .header__item:active {
+    background-color: transparent;
+    opacity: 1;
+  }
+
   .header__item:nth-child(2) {
     padding-right: 120px;
   }
 
   .header__item-link {
     color: #000000;
+  }
+
+  .header__item-link:hover {
+    color: #81b3d2;
+    transition: 250ms;
+  }
+
+  .header__item-link:active {
+    color: #000000;
+    opacity: 0.3;
   }
 }
