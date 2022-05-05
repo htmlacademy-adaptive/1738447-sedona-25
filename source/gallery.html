@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon-sedona.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-sedona.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon-bigger.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
@@ -179,8 +180,15 @@
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <div class="video__picture">
-          <img src="img/video-desktop.jpg.jpg" alt="" class="video__img">
+        <div class="video__picture video__picture--modified">
+        <picture>
+          <source media="(min-width: 1045px)" srcset="img/video-desktop.jpg, img/video-desktop-x2.jpg">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet-x2.jpg">
+          <img src="img/video-mobile.jpg" srcset="img/video-mobile-x2.jpg" alt="" class="video__img">
+        </picture>
+        <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="video__button video__button--modified">
+          <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" fill-opacity="0.7"/>
+        </svg>
         </div>
       </div>
     </section>

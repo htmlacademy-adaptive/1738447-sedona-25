@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon-sedona.ico" type="image/x-icon">
+  <link rel="icon" href="favicon-sedona.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon-bigger.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
@@ -70,13 +71,19 @@
     <section class="advantage">
       <div class="container advantage__container">
         <div class="advantage__content advantage__content--modified">
-          <h3 class="name">НАСТОЯЩИЙ <br class="name__br"> ГОРОДОК</h3>
-          <p class="number">— №1 —</p>
-          <p class="text advantage__text">СЕДОНА НЕ&nbsp;АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ&nbsp;ТЕЧЕТ&nbsp;СВОЯ&nbsp;ЖИЗНЬ</p>
+          <div class="advantage__text">
+            <h3 class="name">НАСТОЯЩИЙ <br class="name__br"> ГОРОДОК</h3>
+            <p class="number">— №1 —</p>
+            <p class="text">СЕДОНА НЕ&nbsp;АТТРАКЦИОН ДЛЯ ТУРИСТОВ,&nbsp;ТАМ&nbsp;ТЕЧЕТ&nbsp;СВОЯ&nbsp;ЖИЗНЬ</p>
+          </div>
         </div>
-        <picture class="advantage__picture">
-          <img src="img/image.png" alt="Вид Седона" class="advantage__img">
-        </picture>
+        <div class="advantage__picture">
+          <picture>
+            <source media="(min-width: 1045px)" srcset="img/advantage-desktop.jpg, img/advantage-desktop-2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/advantage-tablet.jpg, img/advantage-tablet-2x.jpg">
+            <img src="img/advantage-bg-mobile.jpg" srcset="img/advantage-bg-mobile-2x.jpg" alt="настоящий городок" class="advantage__img">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -107,7 +114,7 @@
             </div>
             <div class="bonus__content">
               <h3 class="name bonus__name">Сувениры</h3>
-              <p class="text bonus__text">Не только китайского, но и местного производства!</p>
+              <p class="text bonus__text">Не только китайского, но&nbsp;и&nbsp;местного&nbsp;производства!</p>
             </div>
           </li>
         </ul>
@@ -122,7 +129,11 @@
           <p class="text">Да, по нему можно пройти! Если&nbsp;вы&nbsp;осмелитесь,&nbsp;конечно</p>
         </div>
         <picture class="advantage__picture">
-          <img src="img/image-1.png" alt="picture-view2" class="advantage__img">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/2advantage-desktop.jpg, img/2advantage-desktop-2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/2advantage-tablet.jpg, img/2advantage-tablet-2x.jpg">
+            <img src="img/2advantage-mobile.jpg" srcset="img/2advantage-mobile-2x.jpg" alt="мост дьявола" class="advantage__img">
+          </picture>
         </picture>
       </div>
     </section>
