@@ -5,7 +5,15 @@
   flex-wrap: wrap;
 }
 
-.form__list {
+.form__impression-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: unset;
+}
+
+.form__places-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -200,16 +208,31 @@
     padding-left: 43px;
   }
 
-  .form__list {
+  .form__impression-list {
     flex-direction: row;
     padding: 50px 0;
     flex-wrap: wrap;
-    column-gap: unset;
+    column-gap: 16px;
     align-items: center;
   }
 
-  .form__item {
-    flex-basis: 45%;
+  .form__impression-item {
+    flex-basis: 280px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .form__places-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    align-items: center;
+  }
+
+  .form__places-item {
+    flex-basis: 224px;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -265,9 +288,22 @@
     padding-left: 62px;
   }
 
-  .form__list {
-    gap: 40px;
+  .form__impression-list {
+    gap: 60px;
   }
+
+  .form__impression-item {
+    flex-basis: auto;
+  }
+
+  .form__places-list {
+    gap: 60px;
+  }
+
+  .form__places-item {
+    flex-basis: auto;
+  }
+
 
   .form__item {
     flex-basis: unset;
