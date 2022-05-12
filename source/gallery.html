@@ -12,12 +12,12 @@
 </head>
 
 <body class="body">
-
-  <header class="header">
-    <div class="container header__container header__container--modified">
+  <div class="container">
+    <header class="header">
+    <div class="header__container header__container--modified">
 
       <button class="header__btn-open">
-        <svg width="20" height="24"viewBox="0 0 20 24" >
+        <svg width="20" height="24" viewBox="0 0 20 24">
           <use xlink:href="img/sprite-lib.svg#burger-button"></use>
         </svg>
       </button>
@@ -53,13 +53,13 @@
   <main>
 
     <section class="hero">
-      <div class="container hero__container hero__container--modified">
+      <div class="hero__container hero__container--modified">
         <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo--modified">
       </div>
     </section>
 
     <section class="introduction">
-      <div class="container introduction__container">
+      <div class="introduction__container">
         <h1 class="introduction__title">Фото и видео</h1>
         <p class="introduction__text introduction__text-modified">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
@@ -68,13 +68,13 @@
     </section>
 
     <section class="gallery">
-      <div class="container gallery__container">
+      <div class="gallery__container">
         <ul class="list gallery__list">
           <li class="gallery__item gallery__item--modified">
 
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop-2x.jpg">
-              <source media="(min-width: 768x)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet-2x.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet-2x.jpg 2x">
               <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile-2x.jpg 2x" alt="Неродные просторы" class="gallery__img gallery__img--bigger">
             </picture>
 
@@ -96,8 +96,8 @@
           <li class="gallery__item  gallery__item--modified">
 
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop-2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet-x2.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet-x2.jpg 2x">
               <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile-x2.jpg" alt="Местная растительность" class="gallery__img">
             </picture>
 
@@ -119,8 +119,8 @@
           <li class="gallery__item  gallery__item--modified">
 
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop-x2.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet-x2.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop-x2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet-x2.jpg 2x">
               <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile-x2.jpg" alt="Дорога на север" class="gallery__img">
             </picture>
 
@@ -141,8 +141,8 @@
           </li>
           <li class="gallery__item  gallery__item--modified">
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop-x2.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet-x2.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop-x2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet-x2.jpg 2x">
               <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile-x2.jpg" alt="Мост Дьявола" class="gallery__img">
             </picture>
 
@@ -166,14 +166,14 @@
     </section>
 
     <section class="video">
-      <div class="container video__container">
+      <div class="video__container">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <div class="video__picture video__picture--modified">
         <picture>
-          <source media="(min-width: 1045px)" srcset="img/video-desktop.jpg, img/video-desktop-x2.jpg">
-          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet-x2.jpg">
+          <source media="(min-width: 1045px)" srcset="img/video-desktop.jpg 1x, img/video-desktop-x2.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-x2.jpg 2x">
           <img src="img/video-mobile.jpg" srcset="img/video-mobile-x2.jpg" alt="" class="video__img">
         </picture>
         <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="video__button video__button--modified">
@@ -185,7 +185,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer__container">
+    <div class="footer__container">
       <a href="#" class="footer__link">#VISITSEDONA</a>
       <ul class="list footer__network">
         <li class="footer__item">
@@ -222,6 +222,8 @@
       </div>
     </div>
   </footer>
+  </div>
+
 
 <script src="js/burger.js"></script>
 </body>
