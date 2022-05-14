@@ -4,6 +4,8 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import createWebp from 'gulp-libsquoosh';
+import svgSprite from 'gulp-svg-sprite';
 
 // Styles
 
@@ -17,6 +19,35 @@ export const styles = () => {
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+
+//Webp
+
+export const createWebp = () => {
+  return gulp.src ('source/img/**/*.{jpg,png}')
+  .pipe(squoosh( {
+    webp: {}
+  }))
+  .pipe(gulp.dest('build/img'));
+}
+
+//svg
+export const svgOptimize = () => {
+    gulp.src ('source/img/**/*.svg')
+   .pipe(svgo())
+   .pipe(gulp.dest('build/img'));
+}
+
+export const svgSprite = () => {
+    return gulp.src ('source/img/icons/**/*.svg')
+    .pipe(svgo())
+    .pipe (svgstore ( {
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite-lib.svg'))
+    .pipe(gulp.dest('build/img'));
+ }
+
 
 // Server
 
