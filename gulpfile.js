@@ -22,7 +22,7 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename('style.min.css'))
+    /*.pipe(rename('style.min.css'))*/
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -80,7 +80,7 @@ return gulp.src('source/img/icons/*.svg')
 .pipe(svgstore({
 inlineSvg: true
 }))
-.pipe(rename('sprite.svg'))
+.pipe(rename('sprite-lib.svg'))
 .pipe(gulp.dest('build/img'));
 }
 
@@ -129,9 +129,9 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/js/**/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html'),  gulp.series(html, reload);
-}
+  gulp.watch('source/js/*.js', gulp.series(scripts));
+  gulp.watch('source/*.html', gulp.series(html, reload));
+  }
 
 //build
 

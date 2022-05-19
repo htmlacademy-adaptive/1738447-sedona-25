@@ -1,0 +1,5 @@
+<svg width="20" height="24" viewBox="0 0 20 18" fill="none" id='burger'>
+  <rect width="20" height="4" fill="#81b3d2"/>
+  <rect y="8" width="20" height="4" fill="#81b3d2"/>
+  <rect y="16" width="20" height="4" fill="#81b3d2"/>
+</svg>
