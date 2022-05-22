@@ -10,6 +10,7 @@
 .book__title {
   font-size: 21px;
   max-width: 90%;
+  margin: unset;
 }
 
 .book__text {
@@ -18,7 +19,8 @@
   text-transform: uppercase;
   max-width: 435px;
   margin: unset;
-  padding: 32px 18px;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 .book__button {
@@ -54,12 +56,19 @@
 
 @media (min-width: 768px) {
   .book__container {
-    padding: 61px 0;
+    padding-top: 61px;
+    padding-bottom: 71px;
   }
 
   .book__title {
     font-size: 30px;
     line-height: 26px;
     margin: unset;
+  }
+}
+
+@media (min-width: 1045px) {
+  .book__text {
+    padding-bottom: 41px;
   }
 }

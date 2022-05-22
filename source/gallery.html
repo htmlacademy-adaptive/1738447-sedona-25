@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru"  class="html">
+<html lang="ru" class="html">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="img/favicon-sedona.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/fonts.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon-sedona.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon-bigger.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Седона</title>
 </head>
 
 <body class="body">
-  <header class="header">
-    <div class="container header__container header__container--modified">
+  <div class="container">
+    <header class="header">
+    <div class="header__container header__container--modified">
 
       <button class="header__btn-open">
-        <svg width="20" height="24" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="20" height="4" fill="#81b3d2" />
-          <rect y="8" width="20" height="4" fill="#81b3d2" />
-          <rect y="16" width="20" height="4" fill="#81b3d2" />
+        <svg width="20" height="24" viewBox="0 0 20 24">
+          <use xlink:href="img/sprite-lib.svg#burger"></use>
         </svg>
       </button>
 
@@ -26,9 +25,8 @@
 
       <nav class="header__nav header__nav--modified">
         <button class="header__toggle" type="button">
-          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="2.09094" width="29.5699" height="4" transform="rotate(45 2.09094 0)" fill="#ffffff" />
-            <rect y="20.9092" width="29.5699" height="4" transform="rotate(-45 0 20.9092)" fill="#ffffff" />
+          <svg width="23" height="23" viewBox="0 0 23 23">
+            <use xlink:href="img/sprite-lib.svg#close-button"></use>
           </svg>
         </button>
 
@@ -54,13 +52,13 @@
   <main>
 
     <section class="hero">
-      <div class="container hero__container hero__container--modified">
+      <div class="hero__container hero__container--modified">
         <img src="img/text-sedona.svg.svg" alt="логотип Седона" class="hero__logo hero__logo--modified">
       </div>
     </section>
 
     <section class="introduction">
-      <div class="container introduction__container">
+      <div class="introduction__container">
         <h1 class="introduction__title">Фото и видео</h1>
         <p class="introduction__text introduction__text-modified">
           Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике
@@ -69,13 +67,13 @@
     </section>
 
     <section class="gallery">
-      <div class="container gallery__container">
+      <div class="gallery__container">
         <ul class="list gallery__list">
           <li class="gallery__item gallery__item--modified">
 
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop-2x.jpg">
-              <source media="(min-width: 768x)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet-2x.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet-2x.jpg 2x">
               <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile-2x.jpg 2x" alt="Неродные просторы" class="gallery__img gallery__img--bigger">
             </picture>
 
@@ -86,85 +84,77 @@
               </p>
               <p class="gallery__counter">
                 <button type="button" class="gallery__button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.8"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="white" />
+                  <svg width="23" height="21" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite-lib.svg#like"></use>
                   </svg>
                 </button>
                 <span>1350</span>
               </p>
             </div>
           </li>
-          <li class="gallery__item  gallery__item--modified">
+          <li class="gallery__item gallery__item--modified">
 
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop-2x.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet-x2.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop-2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet-x2.jpg 2x">
               <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile-x2.jpg" alt="Местная растительность" class="gallery__img">
             </picture>
 
-            <div class="gallery__info  gallery__info--modified">
+            <div class="gallery__info gallery__info--modified">
               <p class="gallery__text">
                 <span class="gallery__picture-name">Местная растительность</span>
                 <span class="gallery__picture-author">Автор фото: Сергей</span>
               </p>
               <p class="gallery__counter">
                 <button type="button" class="gallery__button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.8"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="white" />
+                  <svg width="23" height="21" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite-lib.svg#like"></use>
                   </svg>
                 </button>
                 <span>143</span>
               </p>
             </div>
           </li>
-          <li class="gallery__item  gallery__item--modified">
+          <li class="gallery__item gallery__item--modified">
 
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop-x2.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet-x2.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop-x2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet-x2.jpg 2x">
               <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile-x2.jpg" alt="Дорога на север" class="gallery__img">
             </picture>
 
-            <div class="gallery__info  gallery__info--modified">
+            <div class="gallery__info gallery__info--modified">
               <p class="gallery__text">
                 <span class="gallery__picture-name">Дорога на север</span>
                 <span class="gallery__picture-author">Автор фото: Петр</span>
               </p>
               <p class="gallery__counter">
                 <button type="button" class="gallery__button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.8"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="white" />
+                  <svg width="23" height="21" viewBox="0 0 23 21">
+                    <use xlink:href="img/sprite-lib.svg#like"></use>
                   </svg>
                 </button>
                 <span>96</span>
               </p>
             </div>
           </li>
-          <li class="gallery__item  gallery__item--modified">
+          <li class="gallery__item gallery__item--modified">
             <picture>
-              <source media="(min-width: 1045px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop-x2.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet-x2.jpg">
+              <source media="(min-width: 1045px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop-x2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet-x2.jpg 2x">
               <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile-x2.jpg" alt="Мост Дьявола" class="gallery__img">
             </picture>
 
-            <div class="gallery__info  gallery__info--modified">
+            <div class="gallery__info gallery__info--modified">
               <p class="gallery__text">
                 <span class="gallery__picture-name">Мост Дьявола</span>
                 <span class="gallery__picture-author">Автор фото: Антон</span>
               </p>
               <p class="gallery__counter">
                 <button type="button" class="gallery__button">
-                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.8"
-                      d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
-                      fill="white" />
-                  </svg>
+                    <svg width="23" height="21" viewBox="0 0 23 21">
+                      <use xlink:href="img/sprite-lib.svg#like"></use>
+                    </svg>
                 </button>
                 <span>254</span>
               </p>
@@ -175,59 +165,62 @@
     </section>
 
     <section class="video">
-      <div class="container video__container">
+      <div class="video__container">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <div class="video__picture">
-          <img src="img/video-desktop.jpg.jpg" alt="" class="video__img">
+        <div class="video__picture video__picture--modified">
+        <picture>
+          <source media="(min-width: 1045px)" srcset="img/video-desktop.jpg 1x, img/video-desktop-x2.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet-x2.jpg 2x">
+          <img src="img/video-mobile.jpg" srcset="img/video-mobile-x2.jpg" alt="" class="video__img">
+        </picture>
+        <svg width="48" height="55" viewBox="0 0 48 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="video__button video__button--modified">
+          <path d="M48 27.0193L0 54.0193L2.42273e-06 0.0192871L48 27.0193Z" fill="white" fill-opacity="0.7"/>
+        </svg>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__container">
+    <div class="footer__container">
       <a href="#" class="footer__link">#VISITSEDONA</a>
       <ul class="list footer__network">
         <li class="footer__item">
           <a href="#">
-            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+            <svg width="24" height="14">
+              <use xlink:href="img/sprite-lib.svg#VK"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a href="#">
-            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z"
-                fill="white" />
+            <svg width="22" height="18">
+              <use xlink:href="img/sprite-lib.svg#telegram"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a href="#">
-            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z"
-                fill="white" />
+            <svg width="20" height="16">
+              <use xlink:href="img/sprite-lib.svg#youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
 
       <div class="footer__logo">
-        <a href="https://up.htmlacademy.ru/adaptive/25?_ga=2.208652690.1206953348.1649253009-2116594886.1649003971"
-          class="footer__logo">Разработано
+        <a href="https://up.htmlacademy.ru/adaptive/25?_ga=2.208652690.1206953348.1649253009-2116594886.1649003971" class="footer__logo">Разработано
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 60 60">
-            <path fill="#000000"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            <path fill="#000000" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+  </div>
+
 
 <script src="js/burger.js"></script>
 </body>
