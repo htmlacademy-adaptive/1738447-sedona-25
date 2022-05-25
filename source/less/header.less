@@ -35,11 +35,11 @@
   transition: 250ms;
 }
 
-.header__btn-open:hover svg rect {
+.header__btn-open:hover rect {
   opacity: 0.6;
 }
 
-.header__btn-open:active svg rect {
+.header__btn-open:active rect {
   opacity: 0.3;
 }
 
@@ -53,16 +53,16 @@
   transition: 250ms;
 }
 
-.header__toggle:hover svg rect {
+.header__toggle:hover rect {
   opacity: 0.6;
 }
 
-.header__toggle:active svg rect {
+.header__toggle:active rect {
   opacity: 0.3;
 }
 
 .header__nav--modified {
-  opacity: 1;
+  opacity: 0;
   position: fixed;
   z-index: 20;
   left: 0;
@@ -70,13 +70,13 @@
   top: 0;
   width: 100%;
   background-color: #81b3d2;
-  transform: translateY(0);
+  transform: translateY(-100%);
   transition: 300ms;
 }
 
 .header__nav--active {
-  transform: translateY(-100%);
-  opacity: 0;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .header__list {
